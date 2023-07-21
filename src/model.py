@@ -156,6 +156,10 @@ class Model:
         model_dir = '../model/'
         latest_snapshot = tf.train.latest_checkpoint(model_dir)  # is there a saved model?
 
+        current_file = os.path.abspath(__file__)
+        current_directory = os.path.dirname(current_file)
+        model_dir = os.path.join(current_directory, 'model')
+
         # if model must be restored (for inference), there must be a snapshot
         if self.must_restore and not latest_snapshot:
             raise Exception('No saved model found in: ' + model_dir)
