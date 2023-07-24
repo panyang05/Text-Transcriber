@@ -11,4 +11,9 @@ If you want to use our website, please follow the steps bellow.
 ```cd website```
 3. Run ```main.py``` file. \
 ```python main.py```
-4. Copy the server address, and open it in browser. 
+4. Copy the server address, and open it in browser.
+
+## Resources
+* For model training: https://github.com/githubharald/SimpleHTR
+* For word detector: https://github.com/githubharald/WordDetector
+* Google Text-to-Speech API
